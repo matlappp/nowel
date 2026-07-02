@@ -1,0 +1,101 @@
+/* ============================================================
+   Nowel — responsive
+   ============================================================ */
+
+/* ---- Tablet / small desktop ---- */
+@media (max-width: 1024px) {
+	.season-grid { grid-template-columns: repeat(2, 1fr); }
+	.service-grid { grid-template-columns: repeat(2, 1fr); }
+	.equip-grid { grid-template-columns: repeat(2, 1fr); }
+	.post-grid { grid-template-columns: repeat(2, 1fr); }
+	.perks-grid { grid-template-columns: repeat(2, 1fr); }
+	.feature-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- Mobile nav breakpoint ---- */
+@media (max-width: 920px) {
+	.header-cta { display: none; }
+	.nav-toggle { display: flex; }
+	.brand-logo { height: 48px; }
+	.primary-nav {
+		position: fixed;
+		inset: 80px 0 auto 0;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		background: var(--paper);
+		border-bottom: 1px solid var(--line);
+		padding: 0.5rem 1.6rem 1.6rem;
+		box-shadow: var(--shadow);
+		transform: translateY(-12px);
+		opacity: 0;
+		visibility: hidden;
+		transition: transform 0.35s var(--ease), opacity 0.35s var(--ease), visibility 0.35s;
+	}
+	.primary-nav.is-open {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
+	.primary-nav a {
+		padding: 1rem 0;
+		font-size: 1.05rem;
+		border-bottom: 1px solid var(--line);
+	}
+	.primary-nav a::after { display: none; }
+	.primary-nav .btn {
+		margin-top: 1.2rem;
+		justify-content: center;
+	}
+
+	.hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+	.hero-media { order: -1; max-width: 440px; margin-inline: auto; }
+	.hero-text { text-align: center; }
+	.hero-text .eyebrow, .hero-actions { justify-content: center; }
+	.hero-text .lead { margin-inline: auto; }
+	.hero-chip { left: auto; right: -4%; }
+
+	.split { grid-template-columns: 1fr; gap: 2.5rem; }
+	.split .media { order: -1; }
+	.area { grid-template-columns: 1fr; }
+	.contact-grid { grid-template-columns: 1fr; }
+	.featured-post { grid-template-columns: 1fr; }
+	.featured-post .media { aspect-ratio: 16 / 10; }
+	.featured-post .body { padding: 0 clamp(1.5rem, 5vw, 2.5rem) clamp(1.5rem, 5vw, 2.5rem); }
+	.newsletter { grid-template-columns: 1fr; }
+	.steps { grid-template-columns: 1fr; gap: 2rem; }
+	.footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+	.footer-brand { grid-column: 1 / -1; }
+
+	.svc-body { grid-template-columns: 1fr; }
+	.svc-aside { position: static; order: -1; }
+	.related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 620px) {
+	.wrap { padding-inline: 1.2rem; }
+	.season-grid,
+	.service-grid,
+	.equip-grid,
+	.post-grid,
+	.perks-grid,
+	.tier-grid { grid-template-columns: 1fr; }
+
+	.stat-row { gap: 1.5rem 2rem; }
+	.area-card ul { columns: 1; }
+	.field-row { grid-template-columns: 1fr; gap: 0; }
+
+	.job { grid-template-columns: auto 1fr; }
+	.job .btn { grid-column: 1 / -1; justify-content: center; }
+
+	.season-header { align-items: flex-start; flex-direction: column; }
+	.footer-top { grid-template-columns: 1fr; gap: 2rem; }
+	.footer-bottom { flex-direction: column; align-items: flex-start; }
+
+	.hero-chip { display: none; }
+	.quote blockquote { font-size: 1.5rem; }
+
+	.related-grid { grid-template-columns: 1fr; }
+	.svc-head .tag { display: none; }
+}

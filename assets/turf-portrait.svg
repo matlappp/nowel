@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration de pelouse rayée">
+  <defs>
+    <linearGradient id="psky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EBE5D4"/>
+      <stop offset="1" stop-color="#D7DECB"/>
+    </linearGradient>
+    <linearGradient id="phillA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#82A47A"/>
+      <stop offset="1" stop-color="#4C7A57"/>
+    </linearGradient>
+    <linearGradient id="phillB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3C6B4A"/>
+      <stop offset="1" stop-color="#1C3A29"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#psky)"/>
+  <circle cx="600" cy="210" r="86" fill="#E7C2A6" opacity="0.9"/>
+  <circle cx="600" cy="210" r="86" fill="#BD5B36" opacity="0.16"/>
+  <path d="M0 520 C 180 460, 420 560, 600 510 C 720 478, 770 510, 800 500 L800 1000 L0 1000 Z" fill="url(#phillA)"/>
+  <g opacity="0.16" stroke="#FBF8F0" stroke-width="24">
+    <path d="M0 560 C 180 505, 420 600, 600 552 C 720 520, 770 552, 800 544" fill="none"/>
+    <path d="M0 640 C 180 585, 420 680, 600 632 C 720 600, 770 632, 800 624" fill="none"/>
+    <path d="M0 720 C 180 668, 420 760, 600 715 C 720 684, 770 715, 800 708" fill="none"/>
+  </g>
+  <path d="M0 720 C 200 665, 440 770, 620 722 C 730 692, 775 720, 800 712 L800 1000 L0 1000 Z" fill="url(#phillB)"/>
+  <g opacity="0.13" stroke="#FBF8F0" stroke-width="28">
+    <path d="M0 790 C 200 740, 440 838, 620 794 C 730 764, 775 792, 800 784" fill="none"/>
+    <path d="M0 880 C 200 832, 440 928, 620 884 C 730 856, 775 882, 800 876" fill="none"/>
+  </g>
+</svg>

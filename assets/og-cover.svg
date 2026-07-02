@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Les Entretiens Nowel — entretien de pelouse écologique et électrique">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E4A2A"/>
+      <stop offset="1" stop-color="#14311C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M-40 470 C 320 405, 640 500, 900 452 C 1080 420, 1180 452, 1260 440 L1260 630 L-40 630 Z" fill="#4CAE32" opacity="0.9"/>
+  <path d="M-40 520 C 320 460, 640 555, 900 508 C 1080 478, 1180 508, 1260 498 L1260 630 L-40 630 Z" fill="#2F7D22" opacity="0.7"/>
+  <path d="M150 150 L96 235 L128 235 L114 300 L178 214 L142 214 Z" fill="#F7C81C" stroke="#14311C" stroke-width="4" stroke-linejoin="round"/>
+  <text x="230" y="250" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="8" fill="#A6D598">LES ENTRETIENS</text>
+  <text x="226" y="360" font-family="Helvetica, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="2" fill="#F5F7EF">NOWEL</text>
+  <text x="232" y="430" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="600" fill="#F7C81C">Entretien de pelouse écologique &amp; 100 % électrique</text>
+  <text x="232" y="478" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#D8E8CC">Grande région de Montréal</text>
+</svg>
