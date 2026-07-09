@@ -135,4 +135,39 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/aeration-ou-dechaumage-au-printemps.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/cinq-erreurs-de-tonte.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/hauteur-de-coupe-ideale.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/calendrier-de-fertilisation-quebec.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/preparer-son-terrain-pour-lhiver.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/tourbe-ou-semences.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>https://www.nowel.ca/blog/mauvaises-herbes-prevenir.html</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.6</priority>
+	</url>
 </urlset>
