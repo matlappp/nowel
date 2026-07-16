@@ -72,19 +72,225 @@
 			<a href="./index.html" class="brand" aria-label="Les Entretiens Nowel — accueil">
 				<img src="./assets/logo.png" alt="Les Entretiens Nowel" class="brand-logo" width="522" height="432">
 			</a>
-			<nav class="primary-nav" id="primary-nav" aria-label="Navigation principale">
-				<a href="./services.html">Services</a>
-				<a href="./locations.html">Locations</a>
-				<a href="./blog.html">Blog</a>
-				<a href="./contact.html" aria-current="page">Contact</a>
-				<a href="./carrieres.html">Carrières</a>
+
+			<nav class="nav-v2" aria-label="Navigation principale">
+				<div class="nav-item has-dd is-mega">
+					<a href="./services.html" class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="dd-services">
+						Services
+						<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9 12 15 18 9"/></svg>
+					</a>
+					<div class="dd dd-mega" id="dd-services">
+						<div class="dd-inner">
+							<div class="dd-cats">
+								<a href="./services.html#printemps" class="dd-cat spring is-active" data-cat="printemps">
+									<span class="dot"></span>Printemps
+									<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+								</a>
+								<a href="./services.html#ete" class="dd-cat summer" data-cat="ete">
+									<span class="dot"></span>Été
+									<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+								</a>
+								<a href="./services.html#automne" class="dd-cat autumn" data-cat="automne">
+									<span class="dot"></span>Automne
+									<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+								</a>
+								<a href="./services.html#quatre-saisons" class="dd-cat allyear" data-cat="quatre-saisons">
+									<span class="dot"></span>Quatre saisons
+									<svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+								</a>
+								<a href="./services.html" class="dd-all">Tous les services →</a>
+							</div>
+							<div class="dd-panels">
+								<ul class="dd-panel is-active" data-cat="printemps">
+									<li><a href="./services/ouverture-de-terrain.html">Ouverture de terrain</a></li>
+									<li><a href="./services/ouverture-de-plate-bande.html">Ouverture de plate-bande</a></li>
+									<li><a href="./services/aeration.html">Aération</a></li>
+									<li><a href="./services/dechaumage.html">Déchaumage</a></li>
+									<li><a href="./services/aplatissage-de-terrain.html">Aplatissage de terrain</a></li>
+									<li><a href="./services/nettoyage-etendue-asphaltee.html">Nettoyage d'étendue asphaltée</a></li>
+								</ul>
+								<ul class="dd-panel" data-cat="ete">
+									<li><a href="./services/tonte-residentielle.html">Tonte résidentielle</a></li>
+									<li><a href="./services/tonte-commerciale.html">Tonte commerciale &amp; municipale</a></li>
+									<li><a href="./services/debroussaillage.html">Débroussaillage</a></li>
+									<li><a href="./services/fertilisation.html">Fertilisation</a></li>
+									<li><a href="./services/pesticides-herbicides.html">Pesticides &amp; herbicides <span class="dd-pill">À venir</span></a></li>
+									<li><a href="./services/desherbage.html">Désherbage</a></li>
+									<li><a href="./services/taille-de-haie.html">Taille de haie</a></li>
+									<li><a href="./services/pose-de-tourbe.html">Pose de tourbe</a></li>
+									<li><a href="./services/application-de-semences.html">Application de semences</a></li>
+									<li><a href="./services/elagage-abattage.html">Élagage &amp; abattage</a></li>
+									<li><a href="./services/terrassement-paysagement.html">Terrassement &amp; paysagement</a></li>
+								</ul>
+								<ul class="dd-panel" data-cat="automne">
+									<li><a href="./services/fermeture-de-plate-bande.html">Fermeture de plate-bande</a></li>
+									<li><a href="./services/ramassage-des-feuilles.html">Ramassage des feuilles</a></li>
+								</ul>
+								<ul class="dd-panel" data-cat="quatre-saisons">
+									<li><a href="./services/restauration-matieres-premieres.html">Restauration de matières premières</a></li>
+									<li><a href="./services/location-main-doeuvre.html">Location de main-d'œuvre</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-item has-dd">
+					<a href="./locations.html" class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="dd-locations">
+						Locations
+						<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9 12 15 18 9"/></svg>
+					</a>
+					<div class="dd dd-locations" id="dd-locations">
+						<ul>
+							<li><a href="./locations.html#tondeuses-autoportees">Tondeuses autoportées</a></li>
+							<li><a href="./locations.html#aerateurs">Aérateurs</a></li>
+							<li><a href="./locations.html#dechaumeuses">Déchaumeuses</a></li>
+							<li><a href="./locations.html#souffleurs-debroussailleuses">Souffleurs &amp; débroussailleuses</a></li>
+							<li><a href="./locations.html#taille-haies-elagueuses">Taille-haies &amp; élagueuses</a></li>
+							<li><a href="./locations.html#remorques-utilitaires">Remorques utilitaires</a></li>
+						</ul>
+						<a href="./locations.html" class="dd-all">Toutes les locations →</a>
+					</div>
+				</div>
+
+				<a href="./blog.html" class="nav-link">Blog</a>
+				<a href="./contact.html" class="nav-link" aria-current="page">Contact</a>
+				<a href="./carrieres.html" class="nav-link">Carrières</a>
 				<a href="./contact.html" class="btn btn-clay">Soumission gratuite</a>
 			</nav>
-			<button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="primary-nav" aria-expanded="false">
+
+			<button class="nav-burger" aria-label="Ouvrir le menu" aria-controls="drawer" aria-expanded="false">
 				<span></span><span></span><span></span>
 			</button>
 		</div>
 	</header>
+
+	<!-- Tiroir mobile (menu coulissant) -->
+	<div class="drawer-overlay" aria-hidden="true"></div>
+	<aside class="drawer" id="drawer" data-level="0" aria-hidden="true" aria-label="Menu mobile">
+		<div class="drawer-head">
+			<img src="./assets/logo.png" alt="Les Entretiens Nowel" class="drawer-logo" width="522" height="432">
+			<button class="drawer-close" aria-label="Fermer le menu">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18 M18 6 6 18"/></svg>
+			</button>
+		</div>
+		<div class="drawer-viewport">
+			<div class="drawer-track">
+
+				<!-- Niveau 0 : menu principal -->
+				<div class="drawer-panel">
+					<button type="button" class="drawer-link has-sub" data-open="services">
+						Services
+						<svg class="chev-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+					</button>
+					<button type="button" class="drawer-link has-sub" data-open="locations">
+						Locations
+						<svg class="chev-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+					</button>
+					<a href="./blog.html" class="drawer-link">Blog</a>
+					<a href="./contact.html" class="drawer-link" aria-current="page">Contact</a>
+					<a href="./carrieres.html" class="drawer-link">Carrières</a>
+					<a href="./contact.html" class="btn btn-clay">Soumission gratuite</a>
+				</div>
+
+				<!-- Niveau 1 : sous-menus Services / Locations -->
+				<div class="drawer-panel">
+					<div class="drawer-sub" data-menu="services">
+						<button type="button" class="drawer-back" data-back="0">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12 15 18"/></svg>
+							Menu
+						</button>
+						<span class="drawer-title">Services</span>
+						<button type="button" class="drawer-link has-sub spring" data-open-cat="printemps">
+							<span class="dot"></span>Printemps
+							<svg class="chev-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+						</button>
+						<button type="button" class="drawer-link has-sub summer" data-open-cat="ete">
+							<span class="dot"></span>Été
+							<svg class="chev-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+						</button>
+						<button type="button" class="drawer-link has-sub autumn" data-open-cat="automne">
+							<span class="dot"></span>Automne
+							<svg class="chev-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+						</button>
+						<button type="button" class="drawer-link has-sub allyear" data-open-cat="quatre-saisons">
+							<span class="dot"></span>Quatre saisons
+							<svg class="chev-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 15 12 9 18"/></svg>
+						</button>
+						<a href="./services.html" class="drawer-all">Tous les services →</a>
+					</div>
+					<div class="drawer-sub" data-menu="locations">
+						<button type="button" class="drawer-back" data-back="0">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12 15 18"/></svg>
+							Menu
+						</button>
+						<span class="drawer-title">Locations</span>
+						<a href="./locations.html#tondeuses-autoportees" class="drawer-link">Tondeuses autoportées</a>
+						<a href="./locations.html#aerateurs" class="drawer-link">Aérateurs</a>
+						<a href="./locations.html#dechaumeuses" class="drawer-link">Déchaumeuses</a>
+						<a href="./locations.html#souffleurs-debroussailleuses" class="drawer-link">Souffleurs &amp; débroussailleuses</a>
+						<a href="./locations.html#taille-haies-elagueuses" class="drawer-link">Taille-haies &amp; élagueuses</a>
+						<a href="./locations.html#remorques-utilitaires" class="drawer-link">Remorques utilitaires</a>
+						<a href="./locations.html" class="drawer-all">Toutes les locations →</a>
+					</div>
+				</div>
+
+				<!-- Niveau 2 : services par catégorie -->
+				<div class="drawer-panel">
+					<div class="drawer-sub" data-cat="printemps">
+						<button type="button" class="drawer-back" data-back="1">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12 15 18"/></svg>
+							Services
+						</button>
+						<span class="drawer-title spring"><span class="dot"></span>Printemps</span>
+						<a href="./services/ouverture-de-terrain.html" class="drawer-link">Ouverture de terrain</a>
+						<a href="./services/ouverture-de-plate-bande.html" class="drawer-link">Ouverture de plate-bande</a>
+						<a href="./services/aeration.html" class="drawer-link">Aération</a>
+						<a href="./services/dechaumage.html" class="drawer-link">Déchaumage</a>
+						<a href="./services/aplatissage-de-terrain.html" class="drawer-link">Aplatissage de terrain</a>
+						<a href="./services/nettoyage-etendue-asphaltee.html" class="drawer-link">Nettoyage d'étendue asphaltée</a>
+					</div>
+					<div class="drawer-sub" data-cat="ete">
+						<button type="button" class="drawer-back" data-back="1">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12 15 18"/></svg>
+							Services
+						</button>
+						<span class="drawer-title summer"><span class="dot"></span>Été</span>
+						<a href="./services/tonte-residentielle.html" class="drawer-link">Tonte résidentielle</a>
+						<a href="./services/tonte-commerciale.html" class="drawer-link">Tonte commerciale &amp; municipale</a>
+						<a href="./services/debroussaillage.html" class="drawer-link">Débroussaillage</a>
+						<a href="./services/fertilisation.html" class="drawer-link">Fertilisation</a>
+						<a href="./services/pesticides-herbicides.html" class="drawer-link">Pesticides &amp; herbicides <span class="dd-pill">À venir</span></a>
+						<a href="./services/desherbage.html" class="drawer-link">Désherbage</a>
+						<a href="./services/taille-de-haie.html" class="drawer-link">Taille de haie</a>
+						<a href="./services/pose-de-tourbe.html" class="drawer-link">Pose de tourbe</a>
+						<a href="./services/application-de-semences.html" class="drawer-link">Application de semences</a>
+						<a href="./services/elagage-abattage.html" class="drawer-link">Élagage &amp; abattage</a>
+						<a href="./services/terrassement-paysagement.html" class="drawer-link">Terrassement &amp; paysagement</a>
+					</div>
+					<div class="drawer-sub" data-cat="automne">
+						<button type="button" class="drawer-back" data-back="1">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12 15 18"/></svg>
+							Services
+						</button>
+						<span class="drawer-title autumn"><span class="dot"></span>Automne</span>
+						<a href="./services/fermeture-de-plate-bande.html" class="drawer-link">Fermeture de plate-bande</a>
+						<a href="./services/ramassage-des-feuilles.html" class="drawer-link">Ramassage des feuilles</a>
+					</div>
+					<div class="drawer-sub" data-cat="quatre-saisons">
+						<button type="button" class="drawer-back" data-back="1">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12 15 18"/></svg>
+							Services
+						</button>
+						<span class="drawer-title allyear"><span class="dot"></span>Quatre saisons</span>
+						<a href="./services/restauration-matieres-premieres.html" class="drawer-link">Restauration de matières premières</a>
+						<a href="./services/location-main-doeuvre.html" class="drawer-link">Location de main-d'œuvre</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</aside>
 
 	<main>
 		<section class="page-hero">
