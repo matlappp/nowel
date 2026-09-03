@@ -75,4 +75,9 @@
 
 	.related-grid { grid-template-columns: 1fr; }
 	.svc-head .tag { display: none; }
+
+	.gal-nav { width: 38px; height: 38px; }
+	.gal-nav svg { width: 16px; height: 16px; }
+	.gal-prev { left: 0.55rem; }
+	.gal-next { right: 0.55rem; }
 }
