@@ -176,6 +176,94 @@
 		reveals.forEach(function (el) { el.classList.add('is-visible'); });
 	}
 
+	/* ---- Galerie du service : carrousel ----
+	   Le défilement natif (scroll-snap) fait le gros du travail : le rail
+	   reste glissable sans JS. On ajoute ici les flèches, les pastilles
+	   et le clavier. */
+	document.querySelectorAll('.gal').forEach(function (gal) {
+		var track = gal.querySelector('.gal-track');
+		var slides = Array.prototype.slice.call(gal.querySelectorAll('.gal-slide'));
+		if (!track || slides.length < 2) return;
+
+		var prev = gal.querySelector('.gal-prev');
+		var next = gal.querySelector('.gal-next');
+		var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+		var index = 0;
+
+		gal.classList.add('has-nav');
+
+		// Pastilles : inutiles sans JS, donc créées ici
+		var dots = document.createElement('div');
+		dots.className = 'gal-dots';
+		var buttons = slides.map(function (slide, i) {
+			var dot = document.createElement('button');
+			dot.type = 'button';
+			dot.className = 'gal-dot';
+			dot.setAttribute('aria-label', 'Photo ' + (i + 1) + ' sur ' + slides.length);
+			dot.addEventListener('click', function () { go(i); });
+			dots.appendChild(dot);
+			return dot;
+		});
+		gal.parentNode.insertBefore(dots, gal.nextSibling);
+
+		// Reflète l'index courant sur les pastilles et les flèches
+		function update() {
+			buttons.forEach(function (dot, i) {
+				dot.classList.toggle('is-active', i === index);
+				if (i === index) dot.setAttribute('aria-current', 'true');
+				else dot.removeAttribute('aria-current');
+			});
+			var focused = document.activeElement;
+			if (prev) prev.disabled = index === 0;
+			if (next) next.disabled = index === slides.length - 1;
+			// Une flèche qui se désactive ne doit pas emporter le focus avec elle
+			if (focused === prev && prev.disabled && next) next.focus();
+			else if (focused === next && next.disabled && prev) prev.focus();
+		}
+
+		function go(i) {
+			index = Math.max(0, Math.min(slides.length - 1, i));
+			update();
+			track.scrollTo({
+				left: slides[index].offsetLeft - slides[0].offsetLeft,
+				behavior: reduce.matches ? 'auto' : 'smooth'
+			});
+		}
+
+		// Défilement au doigt ou à la molette : on retrouve la diapositive la plus centrée
+		function sync() {
+			var center = track.scrollLeft + track.clientWidth / 2;
+			var best = 0;
+			var min = Infinity;
+			slides.forEach(function (slide, i) {
+				var mid = slide.offsetLeft - slides[0].offsetLeft + slide.offsetWidth / 2;
+				var dist = Math.abs(mid - center);
+				if (dist < min) { min = dist; best = i; }
+			});
+			index = best;
+			update();
+		}
+
+		if (prev) prev.addEventListener('click', function () { go(index - 1); });
+		if (next) next.addEventListener('click', function () { go(index + 1); });
+
+		track.addEventListener('keydown', function (e) {
+			if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+			e.preventDefault();
+			go(index + (e.key === 'ArrowRight' ? 1 : -1));
+		});
+
+		var ticking = false;
+		track.addEventListener('scroll', function () {
+			if (ticking) return;
+			ticking = true;
+			window.requestAnimationFrame(function () { ticking = false; sync(); });
+		}, { passive: true });
+		window.addEventListener('resize', sync, { passive: true });
+
+		sync();
+	});
+
 	/* ---- Current year ---- */
 	var year = document.getElementById('year');
 	if (year) year.textContent = new Date().getFullYear();
