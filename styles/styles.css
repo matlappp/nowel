@@ -604,6 +604,16 @@ em, .serif-italic {
 	padding: 0 0 0.5rem;
 	border-bottom: 1px solid var(--line);
 }
+.dd-group {
+	display: block;
+	padding: 0.1rem 0.7rem 0.4rem;
+	font-weight: 800;
+	font-size: 0.68rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+.dd-locations ul + .dd-group { padding-top: 0.55rem; }
 
 /* ---- Burger ---- */
 .nav-burger {
@@ -785,6 +795,16 @@ body.no-scroll { overflow: hidden; }
 	color: var(--forest);
 	padding-bottom: 0.5rem;
 }
+.drawer-group {
+	display: block;
+	padding: 1.1rem 0.1rem 0.4rem;
+	font-weight: 800;
+	font-size: 0.72rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+.drawer-title + .drawer-group { padding-top: 0.3rem; }
 .drawer-all {
 	display: inline-block;
 	margin-top: 1rem;
@@ -1434,6 +1454,13 @@ body.no-scroll { overflow: hidden; }
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1.4rem;
 }
+.equip-section { scroll-margin-top: 110px; --accent: var(--moss); }
+.equip-section + .equip-section {
+	margin-top: clamp(2.4rem, 5vw, 3.6rem);
+	padding-top: clamp(2.4rem, 5vw, 3.6rem);
+	border-top: 1px solid var(--line);
+	--accent: var(--yellow-deep);
+}
 .equip-card {
 	background: var(--card);
 	border: 1px solid var(--line);
@@ -2018,7 +2045,7 @@ body.no-scroll { overflow: hidden; }
 	--nrj-ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.77 7.23l.01-.01-3.72-3.72-1.06 1.06 2.11 2.11c-.94.36-1.61 1.26-1.61 2.33 0 1.38 1.12 2.5 2.5 2.5.36 0 .69-.08 1-.21v7.21c0 .55-.45 1-1 1s-1-.45-1-1V14c0-1.1-.9-2-2-2h-1V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V9c0-.69-.28-1.32-.73-1.77zM12 10H6V5h6v5zm6 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z'/%3E%3C/svg%3E");
 }
 .nrj-hybride {
-	--nrj: #D8A50A;
+	--nrj: var(--yellow);
 	--nrj-ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M12 2C12 2 5 9.6 5 14.6 5 18.5 8.1 21.5 12 21.5 15.9 21.5 19 18.5 19 14.6 19 9.6 12 2 12 2ZM13.4 7.8 9.4 13.9 11.6 13.9 10.7 18.4 14.8 12.1 12.6 12.1 13.4 7.8Z'/%3E%3C/svg%3E");
 }
 .nrj-zero {
