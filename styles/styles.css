@@ -1024,7 +1024,7 @@ body.no-scroll { overflow: hidden; }
 	display: flex;
 	align-items: center;
 	gap: 0.85rem;
-	max-width: 230px;
+	max-width: 260px;
 }
 .hero-chip .num {
 	font-family: var(--font-display);
@@ -1036,36 +1036,6 @@ body.no-scroll { overflow: hidden; }
 	font-size: 0.78rem;
 	color: var(--muted);
 	line-height: 1.35;
-}
-
-/* trust strip under hero */
-.trust-strip {
-	border-top: 1px solid var(--line);
-	border-bottom: 1px solid var(--line);
-	background: var(--paper);
-}
-.trust-strip .wrap {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 1.5rem 2rem;
-	padding-block: 1.6rem;
-}
-.trust-item {
-	display: flex;
-	align-items: center;
-	gap: 0.7rem;
-	font-size: 0.9rem;
-	font-weight: 600;
-	color: var(--muted);
-}
-.trust-item svg {
-	width: 22px;
-	height: 22px;
-	stroke: var(--moss);
-	fill: none;
-	stroke-width: 1.6;
-	flex-shrink: 0;
 }
 
 /* ============================================================
