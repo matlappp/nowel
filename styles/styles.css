@@ -1080,7 +1080,7 @@ body.no-scroll { overflow: hidden; }
 /* seasons overview cards (home) */
 .season-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 1.2rem;
 }
 .season-card {
@@ -1132,6 +1132,7 @@ body.no-scroll { overflow: hidden; }
 .season-card.summer { --accent: #E0A80C; }
 .season-card.autumn { --accent: #C87A22; }
 .season-card.allyear { --accent: #2F7D22; }
+.season-card.rental { --accent: #1F6F5C; }
 
 /* values / why-us */
 .feature-grid {
