@@ -5,6 +5,7 @@
 /* ---- Tablet / small desktop ---- */
 @media (max-width: 1024px) {
 	.season-grid { grid-template-columns: repeat(2, 1fr); }
+	.season-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
 	.service-grid { grid-template-columns: repeat(2, 1fr); }
 	.equip-grid { grid-template-columns: repeat(2, 1fr); }
 	.post-grid { grid-template-columns: repeat(2, 1fr); }
