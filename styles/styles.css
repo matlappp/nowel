@@ -369,6 +369,7 @@ em, .serif-italic {
 	align-items: center;
 	gap: 2rem;
 	align-self: stretch;
+	margin-left: auto;
 }
 .nav-v2 .nav-link {
 	position: relative;
@@ -614,6 +615,37 @@ em, .serif-italic {
 	color: var(--muted);
 }
 .dd-locations ul + .dd-group { padding-top: 0.55rem; }
+
+/* ---- Sélecteur de langue FR / EN ---- */
+.lang-switch {
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	padding: 3px;
+	border: 1.5px solid var(--line-strong);
+	border-radius: 100px;
+}
+.lang-switch a {
+	padding: 0.42rem 0.6rem;
+	border-radius: 100px;
+	font-weight: 700;
+	font-size: 0.72rem;
+	letter-spacing: 0.08em;
+	line-height: 1;
+	text-decoration: none;
+	color: var(--muted);
+	transition: background 0.3s var(--ease), color 0.3s var(--ease);
+}
+.lang-switch a:hover { color: var(--forest); }
+.lang-switch a[aria-current="true"] {
+	background: var(--forest);
+	color: var(--paper);
+}
+.lang-switch a:focus-visible { outline: 2px solid var(--clay); outline-offset: 2px; }
+
+/* Version anglaise : la page reste masquée le temps de la traduire
+   (i18n.js la révèle, au plus tard après 3 s) */
+.i18n-pending body { visibility: hidden; }
 
 /* ---- Burger ---- */
 .nav-burger {
@@ -911,6 +943,14 @@ body.no-scroll { overflow: hidden; }
 	height: 16px;
 	fill: var(--sage-soft);
 }
+.footer-bottom .legal-link {
+	margin-left: 0.5rem;
+	color: var(--sage-soft);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(244, 239, 227, 0.3);
+	transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+.footer-bottom .legal-link:hover { color: var(--paper); border-color: var(--paper); }
 .footer-bottom .credit a {
 	color: var(--paper);
 	text-decoration: none;
@@ -1881,6 +1921,15 @@ body.no-scroll { overflow: hidden; }
 .svc-photo img { width: 100%; height: 100%; object-fit: cover; }
 .svc-content p { color: var(--muted); margin-bottom: 1rem; }
 .svc-content .lead { color: var(--forest); font-weight: 500; }
+.svc-content.legal ul {
+	display: flex; flex-direction: column; gap: 0.5rem;
+	margin: 0 0 1.2rem; padding-left: 1.3rem;
+	color: var(--muted);
+}
+.svc-content.legal li::marker { color: var(--moss); }
+.svc-content.legal strong { color: var(--forest); }
+.svc-content.legal a,
+.form-note a { color: var(--clay); text-underline-offset: 2px; }
 .checks { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin: 1rem 0 1.6rem; }
 .checks li { display: flex; gap: 0.7rem; color: var(--ink); }
 .checks svg { width: 20px; height: 20px; fill: none; stroke: var(--moss); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; margin-top: 3px; }

@@ -4,6 +4,22 @@
 (function () {
 	'use strict';
 
+	/* Textes générés ici : la langue est fixée plus tôt par i18n.js */
+	var EN = document.documentElement.lang === 'en';
+	var TXT = EN ? {
+		photo: function (i, n) { return 'Photo ' + i + ' of ' + n; },
+		notWired: 'The form is not connected yet. Email us directly at info@nowel.ca.',
+		sending: 'Sending…',
+		sent: 'Thank you! Your message has been sent. We will get back to you shortly.',
+		error: 'Something went wrong. Please try again or email us at info@nowel.ca.'
+	} : {
+		photo: function (i, n) { return 'Photo ' + i + ' sur ' + n; },
+		notWired: 'Le formulaire n’est pas encore relié. Écrivez-nous directement à info@nowel.ca.',
+		sending: 'Envoi…',
+		sent: 'Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.',
+		error: 'Une erreur est survenue. Réessayez ou écrivez-nous à info@nowel.ca.'
+	};
+
 	/* ---- Header : dropdowns desktop ---- */
 	var ddItems = Array.prototype.slice.call(document.querySelectorAll('.nav-item.has-dd'));
 	var touchOnly = window.matchMedia('(hover: none)');
@@ -199,7 +215,7 @@
 			var dot = document.createElement('button');
 			dot.type = 'button';
 			dot.className = 'gal-dot';
-			dot.setAttribute('aria-label', 'Photo ' + (i + 1) + ' sur ' + slides.length);
+			dot.setAttribute('aria-label', TXT.photo(i + 1, slides.length));
 			dot.addEventListener('click', function () { go(i); });
 			dots.appendChild(dot);
 			return dot;
@@ -278,8 +294,7 @@
 			if (action.indexOf('VOTRE_ID') !== -1 || action === '') {
 				e.preventDefault();
 				if (status) {
-					status.textContent =
-						'Le formulaire n’est pas encore relié. Écrivez-nous directement à info@nowel.ca.';
+					status.textContent = TXT.notWired;
 					status.style.color = 'var(--clay)';
 				}
 				return;
@@ -288,7 +303,7 @@
 			e.preventDefault();
 			var btn = form.querySelector('[type="submit"]');
 			var original = btn ? btn.textContent : '';
-			if (btn) { btn.disabled = true; btn.textContent = 'Envoi…'; }
+			if (btn) { btn.disabled = true; btn.textContent = TXT.sending; }
 			if (status) { status.textContent = ''; }
 
 			fetch(action, {
@@ -299,7 +314,7 @@
 				if (res.ok) {
 					form.reset();
 					if (status) {
-						status.textContent = 'Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.';
+						status.textContent = TXT.sent;
 						status.style.color = 'var(--moss)';
 					}
 				} else {
@@ -307,7 +322,7 @@
 				}
 			}).catch(function () {
 				if (status) {
-					status.textContent = 'Une erreur est survenue. Réessayez ou écrivez-nous à info@nowel.ca.';
+					status.textContent = TXT.error;
 					status.style.color = 'var(--clay)';
 				}
 			}).finally(function () {
