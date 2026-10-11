@@ -20,6 +20,9 @@
 	<meta property="twitter:description" content="Contrats de tonte commerciale, industrielle et municipale : équipement hybride, calendrier fiable et résultats constants. Soumission gratuite.">
 	<meta property="twitter:image" content="https://www.nowel.ca/assets/og-cover.png">
 	<link rel="canonical" href="https://www.nowel.ca/services/tonte-commerciale.html">
+	<link rel="alternate" hreflang="fr-CA" href="https://www.nowel.ca/services/tonte-commerciale.html">
+	<link rel="alternate" hreflang="en-CA" href="https://www.nowel.ca/services/tonte-commerciale.html?lang=en">
+	<link rel="alternate" hreflang="x-default" href="https://www.nowel.ca/services/tonte-commerciale.html">
 	<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 	<link rel="manifest" href="../site.webmanifest">
 	<link rel="preload" as="font" type="font/woff2" href="../fonts/eveleth-bold.woff2" crossorigin>
@@ -27,6 +30,7 @@
 	<link rel="stylesheet" href="../styles/styles.css">
 	<link rel="stylesheet" href="../styles/mediaqueries.css">
 	<script>document.documentElement.classList.add('js');</script>
+	<script src="../scripts/i18n.js"></script>
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -131,7 +135,7 @@
 									<li><a href="../services/desherbage.html">Désherbage<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a></li>
 									<li><a href="../services/hydro-ensemencement.html">Hydro-ensemencement <span class="dd-pill">À venir</span><span class="nrj nrj-essence" role="img" aria-label="Essence" title="Essence"></span></a></li>
 									<li><a href="../services/pose-de-tourbe.html">Pose de tourbe<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a></li>
-									<li><a href="../services/application-de-semences.html">Application de semences<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a></li>
+									<li><a href="../services/terreautage-sursemis.html">Terreautage et sursemis<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a></li>
 									<li><a href="../services/taille-de-haie.html">Taille de haie<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a></li>
 									<li><a href="../services/elagage-abattage.html">Élagage &amp; abattage<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a></li>
 									<li><a href="../services/debroussaillage.html">Débroussaillage<span class="nrj nrj-essence" role="img" aria-label="Essence" title="Essence"></span></a></li>
@@ -176,6 +180,11 @@
 				<a href="../carrieres.html" class="nav-link">Carrières</a>
 				<a href="../contact.html" class="btn btn-clay">Soumission gratuite</a>
 			</nav>
+
+			<div class="lang-switch" role="group" aria-label="Choix de la langue">
+				<a href="?lang=fr" hreflang="fr" lang="fr" aria-label="Français" aria-current="true">FR</a>
+				<a href="?lang=en" hreflang="en" lang="en" aria-label="English">EN</a>
+			</div>
 
 			<button class="nav-burger" aria-label="Ouvrir le menu" aria-controls="drawer" aria-expanded="false">
 				<span></span><span></span><span></span>
@@ -290,7 +299,7 @@
 						<a href="../services/desherbage.html" class="drawer-link">Désherbage<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a>
 						<a href="../services/hydro-ensemencement.html" class="drawer-link">Hydro-ensemencement <span class="dd-pill">À venir</span><span class="nrj nrj-essence" role="img" aria-label="Essence" title="Essence"></span></a>
 						<a href="../services/pose-de-tourbe.html" class="drawer-link">Pose de tourbe<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a>
-						<a href="../services/application-de-semences.html" class="drawer-link">Application de semences<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a>
+						<a href="../services/terreautage-sursemis.html" class="drawer-link">Terreautage et sursemis<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a>
 						<a href="../services/taille-de-haie.html" class="drawer-link">Taille de haie<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a>
 						<a href="../services/elagage-abattage.html" class="drawer-link">Élagage &amp; abattage<span class="nrj nrj-zero" role="img" aria-label="Sans émissions" title="Sans émissions"></span></a>
 						<a href="../services/debroussaillage.html" class="drawer-link">Débroussaillage<span class="nrj nrj-essence" role="img" aria-label="Essence" title="Essence"></span></a>
@@ -466,7 +475,7 @@
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<p>© <span id="year"></span> Les Entretiens Nowel. Tous droits réservés.</p>
+				<p>© <span id="year"></span> Les Entretiens Nowel. Tous droits réservés. <a href="../politique-de-confidentialite.html" class="legal-link">Politique de confidentialité</a></p>
 				<div class="socials">
 					<a href="https://www.facebook.com/p/Les-Entretiens-Nowel-61555817956213/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a>
 					<a href="https://www.instagram.com/lesentretiensnowel/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772 4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.772-1.153 4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.065.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.638-.248 1.363-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg></a>
