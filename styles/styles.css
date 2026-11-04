@@ -1413,10 +1413,14 @@ body.no-scroll { overflow: hidden; }
 	border-radius: 100px;
 	vertical-align: middle;
 }
+/* sous le titre, sur sa propre ligne : en ligne, la pastille seule sur la dernière ligne
+   gardait la hauteur de ligne du H1 et creusait un grand vide avant le sous-titre */
 .page-hero h1 .pill {
+	display: block;
+	width: fit-content;
 	font-size: 0.78rem;
 	padding: 0.25rem 0.75rem;
-	transform: translateY(-0.25em);
+	margin-top: 0.9rem;
 }
 .season-block.spring .service-item { --accent: #4CAE32; }
 .season-block.summer .service-item { --accent: #E0A80C; }
@@ -1430,6 +1434,7 @@ body.no-scroll { overflow: hidden; }
 	gap: 1.2rem;
 	margin-bottom: 1.1rem;
 }
+.tier-grid.is-duo { grid-template-columns: repeat(2, 1fr); }
 .tier {
 	position: relative;
 	background: var(--card);
@@ -1582,6 +1587,14 @@ body.no-scroll { overflow: hidden; }
 .post-card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; line-height: 1.2; }
 .post-card p { font-size: 0.92rem; color: var(--muted); flex: 1; margin-bottom: 1rem; }
 .post-card .more { font-size: 0.8rem; font-weight: 700; color: var(--clay); letter-spacing: 0.04em; }
+
+/* « Le bon moment » : sous-section du blog, une carte par service */
+.bon-moment {
+	margin-top: clamp(4rem, 8vw, 6rem);
+	padding-top: clamp(4rem, 8vw, 6rem);
+	border-top: 1px solid var(--line);
+	scroll-margin-top: 110px;
+}
 
 /* ---- Commanditaires : mêmes cartes que le blog, avec une marque au lieu d'une photo ---- */
 .sponsor-featured .media,
