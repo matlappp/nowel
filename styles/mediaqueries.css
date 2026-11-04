@@ -69,7 +69,8 @@
 	.equip-grid,
 	.post-grid,
 	.perks-grid,
-	.tier-grid { grid-template-columns: 1fr; }
+	.tier-grid,
+	.tier-grid.is-duo { grid-template-columns: 1fr; }
 
 	.stat-row { gap: 1.5rem 2rem; }
 	.area-card ul { columns: 1; }
