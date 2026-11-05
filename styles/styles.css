@@ -11,8 +11,10 @@
    Pour retrouver le gras de Cocogoose, league-spartan.woff2 est
    épaissie : son axe wght est remappé (table avar, fontTools) depuis
    LeagueSpartan-VariableFont_wght.ttf, d'origine. Graisse CSS → rendu :
-   300→450, 400→600, 500→680, 600→760, 700→840, 800→890, 900→900.
+   300→520, 400→680, 500→740, 600→800, 700→880, 800→895, 900→900.
    Garder les font-weight habituels dans le CSS (400 corps, 700 gras).
+   size-adjust grossit League Spartan seule (ses minuscules sont plus
+   petites que celles de Cocogoose) sans toucher aux font-size du CSS.
    Mulish reste en repli. */
 @font-face {
 	font-display: swap;
@@ -27,6 +29,7 @@
 	font-style: normal;
 	font-weight: 100 900;
 	src: url('../fonts/league-spartan.woff2') format('woff2');
+	size-adjust: 120%;
 }
 @font-face {
 	font-display: swap;
@@ -459,12 +462,12 @@ em, .serif-italic {
 
 /* ---- Mega menu Services ---- */
 .dd-mega {
-	width: min(940px, calc(100vw - 2.4rem));
+	width: min(1000px, calc(100vw - 2.4rem));
 	overflow: hidden;
 }
 .dd-inner {
 	display: grid;
-	grid-template-columns: 205px 1fr;
+	grid-template-columns: 220px 1fr;
 }
 .dd-cats {
 	display: flex;
@@ -483,6 +486,7 @@ em, .serif-italic {
 	text-decoration: none;
 	font-weight: 700;
 	font-size: 0.9rem;
+	white-space: nowrap;
 	color: var(--ink);
 	transition: background 0.2s var(--ease), color 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
@@ -536,7 +540,9 @@ em, .serif-italic {
 }
 .dd-panel.is-active {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(180px, 1fr));
+	/* auto : chaque colonne prend la largeur de son plus long service,
+	   pour éviter les retours à la ligne */
+	grid-template-columns: repeat(2, minmax(180px, auto));
 	gap: 0.1rem 1rem;
 	align-content: start;
 }

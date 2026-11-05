@@ -29,6 +29,15 @@
 	.lang-switch a { padding: 0.4rem 0.5rem; }
 }
 
+/* ---- Bureau étroit : le mega menu Services est plus étroit que ses
+   1000 px, liens un peu réduits pour que chaque service tienne sur une ligne ---- */
+@media (min-width: 921px) and (max-width: 1040px) {
+	.dd-inner { grid-template-columns: 205px 1fr; }
+	.dd-cat { font-size: 0.84rem; }
+	.dd-panels { padding-inline: 0.7rem; }
+	.dd-panel a { font-size: 0.8rem; padding-inline: 0.55rem; }
+}
+
 /* ---- Mobile nav breakpoint ---- */
 @media (max-width: 920px) {
 	.nav-v2 { display: none; }
