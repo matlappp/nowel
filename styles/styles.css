@@ -8,6 +8,11 @@
    Polices de marque : Eveleth (titres) + League Spartan (corps).
    League Spartan (OFL, libre) remplace Cocogoose Pro trial : une
    seule police variable couvre toutes les graisses (100 à 900).
+   Pour retrouver le gras de Cocogoose, league-spartan.woff2 est
+   épaissie : son axe wght est remappé (table avar, fontTools) depuis
+   LeagueSpartan-VariableFont_wght.ttf, d'origine. Graisse CSS → rendu :
+   300→450, 400→600, 500→680, 600→760, 700→840, 800→890, 900→900.
+   Garder les font-weight habituels dans le CSS (400 corps, 700 gras).
    Mulish reste en repli. */
 @font-face {
 	font-display: swap;
@@ -454,12 +459,12 @@ em, .serif-italic {
 
 /* ---- Mega menu Services ---- */
 .dd-mega {
-	width: min(900px, calc(100vw - 2.4rem));
+	width: min(940px, calc(100vw - 2.4rem));
 	overflow: hidden;
 }
 .dd-inner {
 	display: grid;
-	grid-template-columns: 230px 1fr;
+	grid-template-columns: 205px 1fr;
 }
 .dd-cats {
 	display: flex;
