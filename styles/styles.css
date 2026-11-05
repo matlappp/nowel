@@ -5,10 +5,10 @@
    ============================================================ */
 
 /* ---------- Fonts ----------
-   Polices de marque : Eveleth (titres) + Cocogoose Pro (corps),
-   converties en woff2 depuis les .otf/.ttf fournis. Mulish reste
-   en repli. NB : versions « trial » — à remplacer par les licences
-   complètes avant la mise en ligne. */
+   Polices de marque : Eveleth (titres) + League Spartan (corps).
+   League Spartan (OFL, libre) remplace Cocogoose Pro trial : une
+   seule police variable couvre toutes les graisses (100 à 900).
+   Mulish reste en repli. */
 @font-face {
 	font-display: swap;
 	font-family: 'Eveleth';
@@ -18,39 +18,10 @@
 }
 @font-face {
 	font-display: swap;
-	font-family: 'Cocogoose';
+	font-family: 'League Spartan';
 	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/cocogoose-regular.woff2') format('woff2');
-}
-@font-face {
-	font-display: swap;
-	font-family: 'Cocogoose';
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/cocogoose-bold.woff2') format('woff2');
-}
-/* Les chiffres de Cocogoose trial sont remplacés par un glyphe
-   « TRIAL ONLY » : on les sert en Poppins (géométrique très proche),
-   limité aux chiffres via unicode-range. size-adjust aligne la
-   hauteur des chiffres sur les capitales de Cocogoose. */
-@font-face {
-	font-display: swap;
-	font-family: 'Cocogoose';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/poppins-digits-semibold.woff2') format('woff2');
-	unicode-range: U+0030-0039;
-	size-adjust: 108%;
-}
-@font-face {
-	font-display: swap;
-	font-family: 'Cocogoose';
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/poppins-digits-bold.woff2') format('woff2');
-	unicode-range: U+0030-0039;
-	size-adjust: 108%;
+	font-weight: 100 900;
+	src: url('../fonts/league-spartan.woff2') format('woff2');
 }
 @font-face {
 	font-display: swap;
@@ -89,8 +60,8 @@
 	--shadow: 0 18px 40px -20px rgba(20, 48, 26, 0.32);
 	--shadow-lg: 0 40px 80px -32px rgba(20, 48, 26, 0.42);
 
-	--font-display: 'Eveleth', 'Cocogoose', 'Mulish', system-ui, sans-serif;
-	--font-body: 'Cocogoose', 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--font-display: 'Eveleth', 'League Spartan', 'Mulish', system-ui, sans-serif;
+	--font-body: 'League Spartan', 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
 	--wrap: 1180px;
 	--radius: 16px;
@@ -483,7 +454,7 @@ em, .serif-italic {
 
 /* ---- Mega menu Services ---- */
 .dd-mega {
-	width: min(720px, calc(100vw - 2.4rem));
+	width: min(900px, calc(100vw - 2.4rem));
 	overflow: hidden;
 }
 .dd-inner {
@@ -582,6 +553,8 @@ em, .serif-italic {
 }
 .dd-pill {
 	display: inline-block;
+	flex-shrink: 0;
+	white-space: nowrap;
 	margin-left: 0.4rem;
 	padding: 0.1rem 0.5rem;
 	border-radius: 100px;
@@ -2141,11 +2114,12 @@ body.no-scroll { overflow: hidden; }
 	border-color: color-mix(in srgb, #C87A22 30%, transparent);
 }
 .eco-note.is-essence svg { fill: #C87A22; stroke: none; }
+/* Même jaune de marque que la pastille .nrj-hybride */
 .eco-note.is-hybride {
-	background: color-mix(in srgb, #E0A80C 12%, transparent);
-	border-color: color-mix(in srgb, #E0A80C 34%, transparent);
+	background: color-mix(in srgb, var(--yellow) 16%, transparent);
+	border-color: color-mix(in srgb, var(--yellow) 45%, transparent);
 }
-.eco-note.is-hybride svg { fill: #B8890A; stroke: none; }
+.eco-note.is-hybride svg { fill: var(--yellow); stroke: none; }
 
 /* ============================================================
    BANDEAU LOGOS — ils nous font confiance (accueil)
