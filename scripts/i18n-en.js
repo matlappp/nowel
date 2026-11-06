@@ -505,7 +505,6 @@
 		/* ---- services/aeration.html ---- */
 		"Aération | Les Entretiens Nowel": "Aeration | Les Entretiens Nowel",
 		"Aération de pelouse par carottage dans la grande région de Montréal : sol décompacté, racines profondes et gazon plus dense. Soumission gratuite.": "Core aeration in Greater Montréal: loosened soil, deeper roots and a thicker lawn. Free quote.",
-		"Aération du sol par carottage": "Core aeration of the soil",
 		"L'aération décompacte un sol tassé par l'hiver et laisse l'eau, l'air et les nutriments atteindre les racines. Un geste simple qui transforme une pelouse. Le service se fait en deux passages : un au printemps et un à l'automne.": "Aeration loosens soil compacted over the winter and lets water, air and nutrients reach the roots. A simple step that transforms a lawn. The service is done in two visits: one in spring and one in fall.",
 		"Carottage mécanique du sol": "Mechanical core aeration",
 		"Meilleure absorption de l'eau et de l'air": "Better water and air absorption",
@@ -514,6 +513,8 @@
 		"Printemps / automne": "Spring / fall",
 		"Fréquence": "Frequency",
 		"2 passages par année": "2 visits a year",
+		"Aérateur à carottes sur une pelouse, devant un immeuble": "Core aerator on a lawn in front of a building",
+		"Carottes de terre laissées sur le gazon après l'aération, une dans la main": "Soil cores left on the lawn after aeration, one held in hand",
 
 		/* ---- services/aplatissage-de-terrain.html ---- */
 		"Aplatissage de terrain | Les Entretiens Nowel": "Lawn levelling | Les Entretiens Nowel",
@@ -525,6 +526,7 @@
 		"Tonte plus facile et uniforme": "Easier, more even mowing",
 		"Équipement hybride.": "Hybrid equipment.",
 		"Ce service combine équipement électrique et à essence, selon l'ampleur et les étapes du travail.": "This service combines electric and gas-powered equipment, depending on the scope and stages of the work.",
+		"Employé Nowel passant un rouleau à gazon sur une pelouse résidentielle": "Nowel employee running a lawn roller over a residential lawn",
 
 		/* ---- services/debroussaillage.html ---- */
 		"Débroussaillage | Les Entretiens Nowel": "Brush clearing | Les Entretiens Nowel",
@@ -545,6 +547,9 @@
 		"Talus débroussaillé en bordure d'un stationnement asphalté": "Cleared slope along the edge of an asphalt parking lot",
 		"Photo précédente": "Previous photo",
 		"Photo suivante": "Next photo",
+		"Employé Nowel débroussaillant des herbes hautes, à contre-jour": "Nowel employee clearing tall grass, backlit by the sun",
+		"Employé débroussaillant un talus le long d'une rue, près d'un bâtiment industriel": "Employee clearing brush on a slope along a street, next to an industrial building",
+		"Muret et talus dégagés au fond d'un stationnement, par une journée ensoleillée": "Retaining wall and slope cleared at the back of a parking lot on a sunny day",
 
 		/* ---- services/dechaumage.html ---- */
 		"Déchaumage | Les Entretiens Nowel": "Dethatching | Les Entretiens Nowel",
@@ -574,6 +579,7 @@
 		"Pour pavé uni, allées et gravier": "For pavers, walkways and gravel",
 		"100 % électrique.": "100% electric.",
 		"Ce service est réalisé avec un équipement électrique — plus silencieux, sans essence et sans émissions.": "This service is performed with electric equipment — quieter, gas-free and emission-free.",
+		"Traitement ciblé des mauvaises herbes qui poussent entre les pavés d'une allée": "Targeted treatment of weeds growing between the pavers of a walkway",
 
 		/* ---- services/elagage-abattage.html ---- */
 		"Élagage et abattage de petits arbres | Les Entretiens Nowel": "Pruning and small tree removal | Les Entretiens Nowel",
@@ -585,12 +591,16 @@
 		"Travail sécuritaire": "Safe work practices",
 		"Nettoyage et ramassage inclus": "Cleanup and debris removal included",
 		"Branches coupées empilées au pied d'arbres élagués devant un bâtiment commercial": "Cut branches stacked at the foot of pruned trees in front of a commercial building",
+		"Élagage d'une rangée de peupliers depuis une nacelle levée par un chariot élévateur": "Pruning a row of poplars from a basket raised by a forklift",
+		"Rangée de peupliers élagués le long d'une clôture grillagée": "Row of pruned poplars along a chain-link fence",
+		"Arbres débordant sur une clôture grillagée en bordure d'un stationnement": "Trees overgrowing a chain-link fence beside a parking lot",
+		"Arbres élagués devant un bâtiment industriel": "Pruned trees in front of an industrial building",
+		"Employé Nowel près d'un arbre taillé en boule devant une maison, échelle et remorque sur place": "Nowel employee next to a tree pruned into a ball shape in front of a house, with ladder and trailer on site",
 
 		/* ---- services/fermeture-de-plate-bande.html ---- */
 		"Fermeture de plate-bande | Les Entretiens Nowel": "Fall flower bed cleanup | Les Entretiens Nowel",
 		"Fermeture de plates-bandes avant l'hiver dans la grande région de Montréal : taille, nettoyage et protection de vos végétaux. Soumission gratuite.": "Flower bed winterizing in Greater Montréal: trimming, cleaning and protecting your plants before winter. Free quote.",
 		"Automne · Service": "Fall · Service",
-		"Fermeture de plate-bande à l'automne": "Flower bed winterizing in the fall",
 		"Avant les premiers gels, on prépare vos plates-bandes à passer l'hiver : taille des vivaces, nettoyage complet et protection.": "Before the first frost, we get your flower beds ready for winter: perennial trimming, a complete cleanup and protection.",
 		"Taille des vivaces": "Perennial trimming",
 		"Nettoyage complet": "Complete cleanup",
@@ -598,6 +608,12 @@
 		"Prêt pour le printemps suivant": "Ready for next spring",
 		"Idéal": "Best time",
 		"Octobre – novembre": "October – November",
+		"Plate-bande nettoyée et paillée, bordée de pierres, devant une maison": "Cleaned and mulched flower bed edged with stones in front of a house",
+		"Employé Nowel taillant des arbustes près d'une piscine à l'automne": "Nowel employee trimming shrubs near a pool in the fall",
+		"Plates-bandes nettoyées devant une maison de brique en automne": "Cleaned-up flower beds in front of a brick house in the fall",
+		"Maison de brique et ses plates-bandes prêtes pour l'hiver": "Brick house with its flower beds ready for winter",
+		"Plates-bandes fermées pour l'hiver devant une maison moderne": "Flower beds put to bed for winter in front of a modern house",
+		"Plates-bandes et pelouse nettoyées devant une maison moderne": "Cleaned-up flower beds and lawn in front of a modern house",
 
 		/* ---- services/fertilisation.html ---- */
 		"Fertilisation par engrais granulaire | Les Entretiens Nowel": "Granular fertilizer application | Les Entretiens Nowel",
@@ -609,6 +625,9 @@
 		"Applications réparties dans la saison": "Applications spread over the season",
 		"Un gazon plus dense et plus résistant": "A thicker, more resilient lawn",
 		"Épandeur rempli d'engrais granulaire posé sur une pelouse": "Spreader filled with granular fertilizer sitting on a lawn",
+		"Épandeur d'engrais sur une grande pelouse bordée d'arbres": "Fertilizer spreader on a large tree-lined lawn",
+		"Pelouse jaunie en bordure de rue, avant la fertilisation": "Yellowed lawn along a street, before fertilization",
+		"La même pelouse, verte et dense, après la fertilisation": "The same lawn, green and thick, after fertilization",
 
 		/* ---- services/hydro-ensemencement.html ---- */
 		"Hydro-ensemencement | Les Entretiens Nowel": "Hydroseeding | Les Entretiens Nowel",
@@ -673,6 +692,7 @@
 		"Tout le forfait Premium": "Everything in the Premium package",
 		"Bordure de terrain nettoyée du gravier d'hiver le long d'une route": "Property edge cleared of winter gravel along a road",
 		"Employé Nowel soufflant les débris d'hiver sur un terre-plein commercial": "Nowel employee blowing winter debris off a commercial median",
+		"Gazon jauni par l'hiver en bordure de rue, au moment de l'ouverture du terrain": "Winter-browned grass along a street, at spring cleanup time",
 
 		/* ---- services/pesticides-herbicides.html ---- */
 		"Application de pesticides et herbicides | Les Entretiens Nowel": "Pesticide and herbicide application | Les Entretiens Nowel",
@@ -682,6 +702,7 @@
 		"Traitement ciblé et responsable": "Targeted, responsible treatment",
 		"Réalisé par du personnel certifié": "Performed by certified staff",
 		"Conforme à la réglementation": "Regulation-compliant",
+		"Technicien en combinaison de protection pulvérisant un traitement le long d'un mur de brique": "Technician in protective coveralls spraying a treatment along a brick wall",
 
 		/* ---- services/pose-de-tourbe.html ---- */
 		"Pose de tourbe | Les Entretiens Nowel": "Sod installation | Les Entretiens Nowel",
@@ -692,6 +713,7 @@
 		"Tourbe de qualité": "Quality sod",
 		"Résultat vert immédiat": "Instant green results",
 		"Conseils d'arrosage et d'entretien": "Watering and care tips",
+		"Terrain nivelé et préparé avant la pose de la tourbe, dans une cour arrière": "Ground leveled and prepared before laying sod, in a backyard",
 
 		/* ---- services/ramassage-des-feuilles.html ---- */
 		"Ramassage des feuilles | Les Entretiens Nowel": "Leaf removal | Les Entretiens Nowel",
@@ -726,6 +748,21 @@
 		"Au bon moment de la saison": "At the right time of the season",
 		"Employé Nowel taillant une haie de cèdres du haut d'une échelle, toile de récupération au sol": "Nowel employee trimming a cedar hedge from a ladder, with a tarp on the ground to catch clippings",
 		"Taille d'un arbuste au taille-haie sur perche, au-dessus d'une clôture": "Trimming a shrub with a pole hedge trimmer, above a fence",
+		"Employé Nowel sur une échelle taillant le haut d'une haie de cèdres près d'une maison": "Nowel employee on a ladder trimming the top of a cedar hedge near a house",
+		"Employé Nowel au pied d'une longue haie de cèdres, échelle et outils à proximité": "Nowel employee at the foot of a long cedar hedge, with ladder and tools nearby",
+		"Cèdres taillés en cône devant une maison, échelle et taille-haies électriques": "Cone-shaped cedars in front of a house, with ladder and electric hedge trimmers",
+		"Haie de cèdres taillée au fond d'une cour arrière": "Trimmed cedar hedge at the back of a backyard",
+		"Grand arbuste près d'une piscine, avant la taille": "Large shrub near a pool, before trimming",
+		"Le même arbuste taillé en forme arrondie": "The same shrub trimmed into a rounded shape",
+		"Longue haie de cèdres taillée le long d'une entrée": "Long trimmed cedar hedge along a driveway",
+		"Haie de cèdres taillée droite, sous un ciel bleu": "Cedar hedge trimmed straight under a blue sky",
+		"Haute haie de cèdres taillée bordant une pelouse": "Tall trimmed cedar hedge bordering a lawn",
+		"Haie de cèdres taillée longeant une cour arrière": "Trimmed cedar hedge running along a backyard",
+		"Mur de cèdres fraîchement taillé dans une cour ombragée": "Freshly trimmed wall of cedars in a shaded yard",
+		"Haie de cèdres taillée menant à une cour arrière": "Trimmed cedar hedge leading to a backyard",
+		"Haie de cèdres taillée en bordure d'une entrée en gravier": "Trimmed cedar hedge along a gravel driveway",
+		"Haie taillée au fond d'une grande pelouse": "Trimmed hedge at the far end of a large lawn",
+		"Haie basse taillée sur un grand terrain, toile de récupération au sol": "Low hedge trimmed on a large property, with a debris tarp on the ground",
 
 		/* ---- services/terrassement-paysagement.html ---- */
 		"Terrassement, paysagement et horticulture | Les Entretiens Nowel": "Grading, landscaping and horticulture | Les Entretiens Nowel",
@@ -736,6 +773,10 @@
 		"Aménagement paysager": "Landscape design",
 		"Horticulture & végétalisation": "Horticulture & planting",
 		"Gestion complète du chantier": "Full project management",
+		"Mini-chargeuse sur chenilles étendant de la terre noire dans une cour au bord de l'eau": "Compact track loader spreading topsoil in a waterfront yard",
+		"Mini-chargeuse et rouleau compacteur sur un terrain en préparation au bord du lac": "Compact loader and roller on a lot being prepared by the lake",
+		"Employé Nowel tirant un rouleau sur la terre noire nivelée d'une cour riveraine": "Nowel employee pulling a roller over leveled topsoil in a waterfront yard",
+		"Base de gravier circulaire aménagée dans une cour arrière": "Circular gravel base built in a backyard",
 
 		/* ---- services/terreautage-sursemis.html ---- */
 		"Terreautage et sursemis | Les Entretiens Nowel": "Topdressing and overseeding | Les Entretiens Nowel",
@@ -750,6 +791,8 @@
 		"Une pelouse plus dense et plus résistante": "A thicker, more resilient lawn",
 		"Le bon moment": "The right time",
 		"La fin de l'été et le début de l'automne sont idéaux : le sol est encore chaud, l'humidité revient et les mauvaises herbes font moins concurrence aux jeunes pousses. Le printemps convient aussi, surtout juste après une aération ou un déchaumage.": "Late summer and early fall are ideal: the soil is still warm, moisture returns and weeds compete less with the young shoots. Spring works too, especially right after aeration or dethatching.",
+		"Terreau étendu sur une cour riveraine, avant la levée du gazon": "Topdressing spread over a waterfront yard, before the grass comes up",
+		"La même cour riveraine, couverte d'un gazon dense après le sursemis": "The same waterfront yard, covered in thick grass after overseeding",
 
 		/* ---- services/tonte-commerciale.html ---- */
 		"Tonte de gazon — commercial et institutionnel | Les Entretiens Nowel": "Lawn mowing — commercial and institutional | Les Entretiens Nowel",
@@ -762,6 +805,9 @@
 		"Facturation adaptée à votre organisation": "Billing tailored to your organization",
 		"Selon contrat": "Per contract",
 		"Commercial / institutionnel": "Commercial / institutional",
+		"Employé Nowel sur une tondeuse autoportée devant un hôtel": "Nowel employee on a riding mower in front of a hotel",
+		"Tonte d'un terrain commercial devant la terrasse d'un restaurant": "Mowing a commercial property in front of a restaurant patio",
+		"Pelouse commerciale tondue en bandes le long d'un boulevard": "Commercial lawn mowed in stripes along a boulevard",
 
 		/* ---- services/tonte-residentielle.html ---- */
 		"Tonte de gazon — résidentiel | Les Entretiens Nowel": "Lawn mowing — residential | Les Entretiens Nowel",
@@ -777,6 +823,18 @@
 		"Résidentiel": "Residential",
 		"Hebdo / bimensuelle": "Weekly / twice-monthly",
 		"Sans émissions*": "Zero emissions*",
+		"Employé Nowel sur une tondeuse autoportée électrique, au bord du lac": "Nowel employee on an electric riding mower by the lake",
+		"Employé Nowel passant une tondeuse électrique le long d'une haie": "Nowel employee pushing an electric mower along a hedge",
+		"Un employé Nowel sur la tondeuse autoportée, un autre au souffleur sur l'allée": "One Nowel employee on the riding mower, another with a blower on the walkway",
+		"Grande pelouse fraîchement tondue en bandes": "Large lawn freshly mowed in stripes",
+		"Pelouse entretenue autour d'une grande maison et de son entrée": "Well-kept lawn around a large house and its driveway",
+		"Pelouse tondue en bandes le long d'une entrée menant à une maison boisée": "Lawn mowed in stripes along a driveway leading to a wooded property",
+		"Pelouse tondue en bandes, ombragée par de grands arbres": "Lawn mowed in stripes, shaded by tall trees",
+		"Pelouse tondue en bandes au coin d'une entrée asphaltée": "Lawn mowed in stripes at the corner of a paved driveway",
+		"Pelouse d'une maison moderne fraîchement tondue": "Freshly mowed lawn at a modern house",
+		"Grande pelouse tondue en bandes devant une maison contemporaine": "Large lawn mowed in stripes in front of a contemporary house",
+		"Pelouse tondue en bandes le long d'une entrée, devant une maison": "Lawn mowed in stripes along a driveway in front of a house",
+		"Employé Nowel au coupe-bordure près d'un enclos à chevaux": "Nowel employee with a string trimmer near a horse paddock",
 
 		/* ---- blog/aeration-ou-dechaumage-au-printemps.html ---- */
 		"Aération ou déchaumage : par où commencer au printemps ? | Les Entretiens Nowel": "Aeration or dethatching: where to start in spring? | Les Entretiens Nowel",
